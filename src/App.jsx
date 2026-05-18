@@ -1,10 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Home from "./pages/Home";
 import AddTaskPage from "./pages/AddTaskPage";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(() => {
+    const savedTasks =
+      localStorage.getItem(
+        "projectTasks"
+      );
+
+    return savedTasks
+      ? JSON.parse(savedTasks)
+      : [];
+  });
 
   const addTask = (task) => {
     const newTask = {
@@ -26,6 +35,13 @@ function App() {
   };
 
   const [selectedTask, setSelectedTask] = useState(null);
+
+  useEffect(() => {
+    localStorage.setItem(
+      "projectTasks",
+      JSON.stringify(tasks)
+    );
+  }, [tasks]);
 
   const editTask = (task) => {
     setSelectedTask(task);
