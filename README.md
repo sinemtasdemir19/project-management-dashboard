@@ -1,4 +1,4 @@
-# 📌 Project Management Dashboard
+# Project Management Dashboard
 
 Bu proje, Web Geliştirme – JavaScript eğitimi kapsamında geliştirilmiş modern bir görev yönetim uygulamasıdır. Proje ReactJS kullanılarak geliştirilmiş olup görevlerin eklenmesi, görüntülenmesi, güncellenmesi ve silinmesi işlemlerini desteklemektedir.
 
@@ -6,7 +6,7 @@ Uygulama modern dashboard yapısına sahiptir ve LocalStorage desteği sayesinde
 
 ---
 
-# 🌐 Canlı Yayın Linki (Netlify)
+# Canlı Yayın Linki (Netlify)
 
 Proje yayını:
 
@@ -14,7 +14,7 @@ https://startling-capybara-6fde54.netlify.app/
 
 ---
 
-# 💻 GitHub Proje Linki
+# GitHub Proje Linki
 
 GitHub deposu:
 
@@ -22,19 +22,63 @@ https://github.com/sinemtasdemir19/project-management-dashboard
 
 ---
 
-# 🛠 Kullanılan Teknolojiler
+# 🎯 Proje Amacı
 
-Projede aşağıdaki teknolojiler kullanılmıştır:
+Bu proje ile ReactJS kullanılarak modern bir görev yönetim sistemi geliştirilmesi amaçlanmıştır.
 
-- ReactJS
-- JavaScript (ES6+)
-- Vite
-- Bootstrap 5
-- CSS
-- LocalStorage
-- Git
-- GitHub
-- Netlify
+Proje kapsamında:
+
+- React component yapısı
+- Sayfa organizasyonu
+- CRUD işlemleri
+- State yönetimi
+- LocalStorage kullanımı
+- Responsive arayüz tasarımı
+- Dashboard geliştirme
+
+konuları uygulanmıştır.
+
+---
+
+# Kullanılan Teknolojiler
+
+Projede modern frontend geliştirme araçları ve web teknolojileri kullanılmıştır.
+
+### ReactJS
+Projenin kullanıcı arayüzü ReactJS kullanılarak geliştirilmiştir. Bileşen (component) yapısı sayesinde uygulama daha modüler ve yönetilebilir hâle getirilmiştir.
+
+### JavaScript (ES6+)
+Uygulamanın temel iş mantığı JavaScript kullanılarak geliştirilmiştir. State yönetimi, CRUD işlemleri, filtreleme, sıralama ve LocalStorage işlemleri JavaScript ile gerçekleştirilmiştir.
+
+### Vite
+React projesinin oluşturulması ve geliştirme ortamının hazırlanması için Vite kullanılmıştır. Vite hızlı geliştirme ortamı ve build işlemleri sağlamaktadır.
+
+### Bootstrap 5
+Responsive tasarım ve hazır arayüz bileşenleri için Bootstrap 5 kullanılmıştır.
+
+Bootstrap aşağıdaki alanlarda kullanılmıştır:
+
+- Grid sistemi (container, row, col)
+- Kart yapıları
+- Form elemanları
+- Butonlar
+- Responsive görünüm
+- Margin ve padding düzenleri
+
+### CSS
+Projeye özel görsel tasarım oluşturmak amacıyla CSS kullanılmıştır.
+
+### LocalStorage
+Görev verilerinin tarayıcı üzerinde saklanabilmesi için LocalStorage kullanılmıştır.
+
+### Git
+Versiyon kontrol sistemi olarak Git kullanılmıştır. Geliştirme sürecinde commit işlemleri ile proje aşamaları takip edilmiştir.
+
+### GitHub
+Proje dosyaları GitHub üzerinde public depo olarak paylaşılmıştır ve sürüm takibi yapılmıştır.
+
+### Netlify
+Projenin canlı ortamda yayınlanması için Netlify kullanılmıştır.
 
 ---
 
@@ -61,11 +105,11 @@ Proje içerisinde bileşen yapısı kullanılarak daha düzenli ve yönetilebili
 
 ---
 
-# 📋 Proje Özellikleri
+# Proje Özellikleri
 
 ## CRUD İşlemleri
 
-### ➕ Görev Ekleme
+### Görev Ekleme
 
 Kullanıcı yeni görev oluşturabilmektedir.
 
@@ -83,7 +127,7 @@ Görev oluşturulduktan sonra kullanıcı ana sayfaya yönlendirilmektedir.
 
 ---
 
-### 📄 Görev Listeleme
+### Görev Listeleme
 
 Eklenen görevler dashboard ekranında kart yapısı ile görüntülenmektedir.
 
@@ -102,7 +146,7 @@ yer almaktadır.
 
 ---
 
-### ✏ Görev Güncelleme
+### Görev Güncelleme
 
 Görev kartları üzerindeki **Edit** butonu kullanılarak popup pencere açılmaktadır.
 
@@ -115,7 +159,7 @@ Popup ekranı üzerinden:
 
 ---
 
-### 🗑 Görev Silme
+### Görev Silme
 
 Delete butonu ile görev sistemden kaldırılabilmektedir.
 
@@ -123,7 +167,7 @@ Silinen görevler LocalStorage içerisinden de silinmektedir.
 
 ---
 
-# 🔍 Ek Özellikler
+# Ek Özellikler
 
 Projeye temel CRUD yapısına ek olarak aşağıdaki özellikler eklenmiştir:
 
@@ -178,7 +222,7 @@ uygulanmıştır.
 
 ---
 
-# 💾 LocalStorage Kullanımı
+# LocalStorage Kullanımı
 
 Projede LocalStorage kullanılmıştır.
 
@@ -192,7 +236,7 @@ Bu yapı sayesinde:
 
 ---
 
-# 🖼 Ekran Görüntüleri
+# Ekran Görüntüleri
 
 ## Ana Sayfa – Boş Dashboard
 
@@ -232,19 +276,5 @@ Bu yapı sayesinde:
 <img src="screenshots/search-sort.png" width="850">
 </p>
 
-# 🎯 Proje Amacı
 
-Bu proje ile ReactJS kullanılarak modern bir görev yönetim sistemi geliştirilmesi amaçlanmıştır.
-
-Proje kapsamında:
-
-- React component yapısı
-- Sayfa organizasyonu
-- CRUD işlemleri
-- State yönetimi
-- LocalStorage kullanımı
-- Responsive arayüz tasarımı
-- Dashboard geliştirme
-
-konuları uygulanmıştır.
 
