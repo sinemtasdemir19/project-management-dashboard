@@ -1,16 +1,250 @@
-# React + Vite
+# 📌 Project Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, Web Geliştirme – JavaScript eğitimi kapsamında geliştirilmiş modern bir görev yönetim uygulamasıdır. Proje ReactJS kullanılarak geliştirilmiş olup görevlerin eklenmesi, görüntülenmesi, güncellenmesi ve silinmesi işlemlerini desteklemektedir.
 
-Currently, two official plugins are available:
+Uygulama modern dashboard yapısına sahiptir ve LocalStorage desteği sayesinde sayfa yenilense bile veriler korunmaktadır.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# 🌐 Canlı Yayın Linki (Netlify)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Proje yayını:
 
-## Expanding the ESLint configuration
+https://startling-capybara-6fde54.netlify.app/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+# 💻 GitHub Proje Linki
+
+GitHub deposu:
+
+https://github.com/sinemtasdemir19/project-management-dashboard
+
+---
+
+# 🛠 Kullanılan Teknolojiler
+
+Projede aşağıdaki teknolojiler kullanılmıştır:
+
+- ReactJS
+- JavaScript (ES6+)
+- Vite
+- Bootstrap 5
+- CSS
+- LocalStorage
+- Git
+- GitHub
+- Netlify
+
+---
+
+# 📂 Proje Klasör Yapısı
+
+```text
+src
+│
+├── components
+│   ├── TaskForm.jsx
+│   ├── TaskList.jsx
+│   └── EditTaskModal.jsx
+│
+├── pages
+│   ├── Home.jsx
+│   └── AddTaskPage.jsx
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+Proje içerisinde bileşen yapısı kullanılarak daha düzenli ve yönetilebilir bir yapı oluşturulmuştur.
+
+---
+
+# 📋 Proje Özellikleri
+
+## CRUD İşlemleri
+
+### ➕ Görev Ekleme
+
+Kullanıcı yeni görev oluşturabilmektedir.
+
+Eklenen bilgiler:
+
+- Görev adı
+- Proje adı
+- Açıklama
+- Sorumlu kişi
+- Teslim tarihi
+- Öncelik seviyesi
+- Durum bilgisi
+
+Görev oluşturulduktan sonra kullanıcı ana sayfaya yönlendirilmektedir.
+
+---
+
+### 📄 Görev Listeleme
+
+Eklenen görevler dashboard ekranında kart yapısı ile görüntülenmektedir.
+
+Kart içerisinde:
+
+- Görev numarası
+- Görev adı
+- Proje bilgisi
+- Açıklama
+- Sorumlu kişi
+- Tarih
+- Durum
+- Öncelik seviyesi
+
+yer almaktadır.
+
+---
+
+### ✏ Görev Güncelleme
+
+Görev kartları üzerindeki **Edit** butonu kullanılarak popup pencere açılmaktadır.
+
+Popup ekranı üzerinden:
+
+- Görev bilgileri değiştirilebilir
+- Açıklama düzenlenebilir
+- Durum değiştirilebilir
+- Öncelik seviyesi güncellenebilir
+
+---
+
+### 🗑 Görev Silme
+
+Delete butonu ile görev sistemden kaldırılabilmektedir.
+
+Silinen görevler LocalStorage içerisinden de silinmektedir.
+
+---
+
+# 🔍 Ek Özellikler
+
+Projeye temel CRUD yapısına ek olarak aşağıdaki özellikler eklenmiştir:
+
+✅ Görev arama sistemi
+
+Görevler:
+
+- Görev adına göre
+- Proje adına göre
+- Açıklamaya göre
+- Sorumlu kişiye göre
+
+aranabilmektedir.
+
+---
+
+✅ Görev sıralama sistemi
+
+Sıralama seçenekleri:
+
+- Tarihe göre sıralama
+- Önceliğe göre sıralama
+
+Öncelik sırası:
+
+High → Medium → Low
+
+---
+
+✅ Dashboard kartları
+
+Ana sayfada istatistik kartları bulunmaktadır:
+
+- Total Tasks
+- Pending
+- In Progress
+- Completed
+
+---
+
+✅ Modern kullanıcı arayüzü
+
+Projede:
+
+- Lavanta teması
+- Kart tasarımı
+- Responsive yapı
+- Soft renkler
+- Badge kullanımı
+
+uygulanmıştır.
+
+---
+
+# 💾 LocalStorage Kullanımı
+
+Projede LocalStorage kullanılmıştır.
+
+Bu yapı sayesinde:
+
+- Sayfa yenilendiğinde veriler silinmez
+- Tarayıcı kapatılsa bile görevler korunur
+- Yeni görevler otomatik kaydedilir
+- Güncelleme işlemleri otomatik saklanır
+- Silinen kayıtlar otomatik kaldırılır
+
+---
+
+# 🖼 Ekran Görüntüleri
+
+## Ana Sayfa – Boş Dashboard
+
+<p align="center">
+<img src="screenshots/home-empty.png" width="850">
+</p>
+
+---
+
+## Ana Sayfa – Görevler Eklenmiş Hali
+
+<p align="center">
+<img src="screenshots/home-filled.png" width="850">
+</p>
+
+---
+
+## Görev Ekleme Sayfası
+
+<p align="center">
+<img src="screenshots/add-task-page.png" width="850">
+</p>
+
+---
+
+## Görev Düzenleme Popup Ekranı
+
+<p align="center">
+<img src="screenshots/edit-modal.png" width="850">
+</p>
+
+---
+
+## Arama ve Sıralama Özellikleri
+
+<p align="center">
+<img src="screenshots/search-sort.png" width="850">
+</p>
+
+# 🎯 Proje Amacı
+
+Bu proje ile ReactJS kullanılarak modern bir görev yönetim sistemi geliştirilmesi amaçlanmıştır.
+
+Proje kapsamında:
+
+- React component yapısı
+- Sayfa organizasyonu
+- CRUD işlemleri
+- State yönetimi
+- LocalStorage kullanımı
+- Responsive arayüz tasarımı
+- Dashboard geliştirme
+
+konuları uygulanmıştır.
+
