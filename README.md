@@ -30,6 +30,7 @@ Proje kapsamında:
 
 - React component yapısı
 - Sayfa organizasyonu
+- Interface yapısı kullanımı
 - CRUD işlemleri
 - State yönetimi
 - LocalStorage kullanımı
@@ -96,10 +97,17 @@ src
 │   ├── Home.jsx
 │   └── AddTaskPage.jsx
 │
+├── interfaces
+│   └── TaskInterface.js
+│
 ├── App.jsx
 ├── main.jsx
 └── index.css
 ```
+
+Proje içerisinde bileşen (components), sayfa (pages) ve veri modeli (interfaces) yapıları kullanılarak daha düzenli ve yönetilebilir bir mimari oluşturulmuştur.
+
+Interfaces klasörü içerisinde görev nesnesi için varsayılan yapı tanımlanmıştır ve form işlemlerinde kullanılmıştır.
 
 Proje içerisinde bileşen yapısı kullanılarak daha düzenli ve yönetilebilir bir yapı oluşturulmuştur.
 
