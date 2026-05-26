@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { defaultTask } from "../interfaces/TaskInterface";
 
 function EditTaskModal({
   selectedTask,
@@ -10,8 +11,13 @@ function EditTaskModal({
   const [description, setDescription] = useState("");
   const [responsible, setResponsible] = useState("");
   const [deadline, setDeadline] = useState("");
-  const [priority, setPriority] = useState("Medium");
-  const [status, setStatus] = useState("Pending");
+  const [priority, setPriority] = useState(
+    defaultTask.priority
+  );
+
+  const [status, setStatus] = useState(
+    defaultTask.status
+  );
 
   useEffect(() => {
     if (selectedTask) {

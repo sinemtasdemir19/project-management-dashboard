@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { defaultTask } from "../interfaces/TaskInterface";
 
 function TaskForm({ onAddTask, onCancel }) {
   const [taskName, setTaskName] = useState("");
@@ -6,8 +7,13 @@ function TaskForm({ onAddTask, onCancel }) {
   const [description, setDescription] = useState("");
   const [responsible, setResponsible] = useState("");
   const [deadline, setDeadline] = useState("");
-  const [priority, setPriority] = useState("Medium");
-  const [status, setStatus] = useState("Pending");
+  const [priority, setPriority] = useState(
+    defaultTask.priority
+  );
+
+  const [status, setStatus] = useState(
+    defaultTask.status
+  );
 
   const resetForm = () => {
     setTaskName("");
@@ -15,8 +21,8 @@ function TaskForm({ onAddTask, onCancel }) {
     setDescription("");
     setResponsible("");
     setDeadline("");
-    setPriority("Medium");
-    setStatus("Pending");
+    setPriority(defaultTask.priority);
+    setStatus(defaultTask.status);
   };
 
   const handleSubmit = (e) => {
